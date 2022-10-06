@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="produk">
+  <form action="action.php" method="get">
+    <fieldset>
+      <legend> PEMBELIAN HANDPHONE </legend>
+      <br>
+      <label>Nama: </label>
+      <input type="text" name="nama" class="ketik">
+      <br>
+      <label>Alamat: </label>
+      <input type="text" name="alamat" class="ketik">
+      <br>
+      <label>Contact: </label>
+      <input type="text" name="contact" class="ketik">
+      <br>
+      <label for="pilih merk">Brand: </label>
+      <input list="ambil merk" name="brand" class="ketik">
+      <datalist id="ambil merk">
+        <option value="Huawei"></option>
+        <option value="Iphone"></option>
+        <option value="Nokia"></option>
+        <option value="Samsung"></option>
+        <option value="Xiaomi"></option>
+      </datalist> 
+      <br>
+      <p>Payment:
+      <input type="radio" id="cash">
+      <label for="cash">Cash</label>
+      <input type="radio" id="debit">
+      <label for="cash">Debit</label>
+      </p>
+    </fieldset>
+    <input type="submit">
+  </form>
+  </div>
+</body>
+</html>
